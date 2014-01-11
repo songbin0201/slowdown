@@ -1,83 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <title>github上创建个人博客 by songbin0201</title>
 
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
-    <title>Blog by songbin0201</title>
   </head>
-
   <body>
-    <header>
-      <div class="inner">
-        <h1>Blog</h1>
-        <h2></h2>
-        <a href="https://github.com/songbin0201/blog" class="button"><small>View project on</small>GitHub</a>
-      </div>
-    </header>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">github上创建个人博客</h1>
+        <p class="header">个人</p>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/songbin0201/slow-down/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/songbin0201/slow-down/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/songbin0201/slow-down">View On GitHub</a></li>
+        </ul>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/songbin0201">songbin0201</a></p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+      </header>
+      <section>
+        <h1>
+<a name="github-pages" class="anchor" href="#github-pages"><span class="octicon octicon-link"></span></a><a href="https://pages.github.com/">github pages</a>
+</h1>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<p>首先使用github pages ，创建基于项目，用来存放静态的网页、博文
+github pages 提供模板功能，可以创建和编辑静态的网页来生成文章;<a href="https://help.github.com/articles/creating-pages-with-the-automatic-generator">如何自动创建文章</a></p>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<h1>
+<a name="%E5%AE%89%E8%A3%85jekyll" class="anchor" href="#%E5%AE%89%E8%A3%85jekyll"><span class="octicon octicon-link"></span></a><a href="https://help.github.com/articles/using-jekyll-with-pages">安装jekyll</a>
+</h1>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<p>jekyII是静态网页发布引擎，编辑和上传网页源码后，github会通过jekyII对源码进行处理并生成静态文件；
+使用jekyII可以简单快速的发布文章，而不用每次都麻烦的按照html格式编辑并生成网页</p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<h2>
+<a name="%E5%AE%89%E8%A3%85%E5%89%8D%E7%9A%84requirement%E6%A3%80%E6%9F%A5" class="anchor" href="#%E5%AE%89%E8%A3%85%E5%89%8D%E7%9A%84requirement%E6%A3%80%E6%9F%A5"><span class="octicon octicon-link"></span></a><a href="http://jekyllrb.com/docs/installation/">安装前的requirement检查</a>
+</h2>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<ol>
+<li>ruby 建议 1.9.3版本及以上</li>
+<li>RubyGems</li>
+<li>Linux, Unix, or Mac OS X</li>
+</ol><h2>
+<a name="%E5%AE%89%E8%A3%85%E6%9B%B4%E6%96%B0-ruby" class="anchor" href="#%E5%AE%89%E8%A3%85%E6%9B%B4%E6%96%B0-ruby"><span class="octicon octicon-link"></span></a>安装||更新 ruby</h2>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>ruby -v 检查版本，如果版本低于1.9.3，需要安装新版本的ruby
+1. 下载安装rvm，来管理多版本的ruby
+curl -L <a href="https://get.rvm.io">https://get.rvm.io</a> | bash -s stable --ruby
+2. rvm list known
+查看所有可用的最新版本的ruby
+3. rvm install ruby-2.1.0
+安装2.1.0版本的ruby；安装过程中如果出现“Can not find compiler and 'make' tool - make sure Xcode and/or Command Line Tools are installed.”，参考<a href="http://stackoverflow.com/questions/17006304/why-cant-rvm-find-compiler-and-make-tool-after-installing-xcode%EF%BC%8C%E5%AE%89%E8%A3%85command">http://stackoverflow.com/questions/17006304/why-cant-rvm-find-compiler-and-make-tool-after-installing-xcode，安装command</a> Line Tools
+4. rvm use ruby-2.1.0
+切换使用2.1.0版本的ruby</p>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<h2>
+<a name="%E5%AE%89%E8%A3%85-jekyll" class="anchor" href="#%E5%AE%89%E8%A3%85-jekyll"><span class="octicon octicon-link"></span></a>安装 jekyll</h2>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-        </section>
+<p>gem install jekyll</p>
 
-        <aside id="sidebar">
-          <a href="https://github.com/songbin0201/blog/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/songbin0201/blog/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
+<h1>
+<a name="%E4%BD%BF%E7%94%A8jekyll-%E5%BC%80%E5%A7%8B%E6%96%B0%E5%8D%9A%E5%AE%A2%E4%B9%8B%E6%97%85" class="anchor" href="#%E4%BD%BF%E7%94%A8jekyll-%E5%BC%80%E5%A7%8B%E6%96%B0%E5%8D%9A%E5%AE%A2%E4%B9%8B%E6%97%85"><span class="octicon octicon-link"></span></a><a href="http://jekyllrb.com/docs/usage/">使用jekyll</a> 开始新博客之旅</h1>
 
-          <p class="repo-owner"><a href="https://github.com/songbin0201/blog"></a> is maintained by <a href="https://github.com/songbin0201">songbin0201</a>.</p>
-
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
+<ol>
+<li>jekyll new blogname</li>
+<li>cd blogname</li>
+<li>jekyll serve</li>
+<li>本地访问 http://localhost:4000</li>
+</ol><h1>
+<a name="%E9%85%8D%E7%BD%AEjekyll" class="anchor" href="#%E9%85%8D%E7%BD%AEjekyll"><span class="octicon octicon-link"></span></a><a href="http://jekyllrb.com/docs/configuration/">配置jekyll</a>
+</h1>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
     </div>
-
-  
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
   </body>
 </html>
